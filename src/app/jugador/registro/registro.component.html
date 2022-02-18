@@ -1,0 +1,29 @@
+<div class="formbody contenedornormal">
+  <div class="container contenedor2">
+    <div class="form-group">
+      <img class="imgtitle" src="../../assets/images/Titulo.png" style="margin-top: 40px; margin-bottom: 20px;" />
+    </div>
+    <form [formGroup]="jugadoresForm" (ngSubmit)="onFormSubmit(jugadoresForm.value)">
+      <div class="form-group">
+        <label>Nombre de usuario: </label>
+        <input formControlName="NombreUsuario" type="text" placeholder="Ingrese un nombre de usuario" class="form-control" />
+      </div>
+      <div class="form-group">
+        <label>Contrase&ntilde;a: </label>
+        <input formControlName="Contrasena" type="password" placeholder="Ingrese una contraseña" class="form-control" />
+      </div>
+
+      <div class="row form-group">
+        <div class="col-sm-4">
+          <button type="submit" [disabled]="!jugadoresForm.valid" class="btn btn-success">Crear cuenta</button>
+        </div>
+        <div class="col-sm-8">
+          <button type="reset" style="margin-left: 4vh;" onclick="location.href='/player/login'" class="btn btn-primary">Volver atr&aacute;s</button>
+        </div>
+      </div>
+    </form>
+    <p *ngIf="dataSaved" style="color:rgb(0, 128, 0); font-size:20px; font-weight:bold" class="success">
+      {{message}}
+    </p>
+  </div>
+</div>

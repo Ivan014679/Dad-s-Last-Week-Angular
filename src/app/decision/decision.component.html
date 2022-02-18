@@ -1,0 +1,30 @@
+<div class="formbody contenedorjuego">
+  <div class="container contenedor2">
+    <div class="form-group">
+      <img class="imgtitle" src="../../assets/images/Titulo.png" style="margin-top: 40px; margin-bottom: 20px; margin-left: 19vh;" />
+    </div>
+    <h2 style="margin-right: 32vh;" align="center">
+      <font face="Old English Text MT">{{dia.Nom_Dia}}</font>
+    </h2>
+    <br />
+    <div class="form-group" style="margin-right: 28vh">
+      <p align="justify">
+        <font face="Georgia">
+          {{decision.Texto}}
+        </font>
+      </p>
+    </div>
+    <br />
+    <div class="row justify-content-between container">
+      <div *ngIf="right" class="col-4">
+        <button style="margin-left: 0vh;" [value]="decision.Left" (click)="Left(decision.Left)" class="btn btn-danger">{{left}}</button>
+      </div>
+      <div *ngIf="!right" class="col-4" align="center">
+          <button style="margin-left: 29.5vh;" [value]="decision.Left" (click)="Left(decision.Left)" class="btn btn-danger">{{left}}</button>
+        </div>
+      <div *ngIf="right" class="col-4">
+        <button style="margin-left: 0vh;" [value]="decision.Right" (click)="Right(decision.Right)" class="btn btn-danger">{{right}}</button>
+      </div>
+    </div>
+  </div>
+</div>

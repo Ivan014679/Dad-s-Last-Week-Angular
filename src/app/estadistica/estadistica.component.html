@@ -1,0 +1,36 @@
+<div class="formbody contenedorjuego">
+  <div class="container contenedor2">
+    <div class="form-group">
+      <img class="imgtitle" src="../../assets/images/Titulo.png"
+        style="margin-top: 40px; margin-bottom: 20px; margin-left: 19vh;" />
+    </div>
+    <h2 style="margin-right: 32vh;" align="center">
+      <font face="Old English Text MT">Estad&iacute;sticas</font>
+    </h2>
+    <br />
+    <div class="form-group" style="margin-right: 28vh;">
+      <table id="table" class="display table table-hover">
+        <thead class="thead-dark">
+          <tr>
+            <th>Jugador</th>
+            <th>Personaje</th>
+            <th>Salud</th>
+            <th>Estado</th>
+            <th>Evento final</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let estadistica of estadisticas | async">
+            <td>{{estadistica.Jugador}}</td>
+            <td>{{estadistica.Nom_Personaje}}</td>
+            <td>{{estadistica.Porcentaje_Salud}}</td>
+            <td>{{estadistica.Estado}}</td>
+            <td>{{estadistica.Decision_Final}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <br />
+    <a routerLink="" routerLinkActive="active" class="btn btn-danger">Volver atr&aacute;s</a>
+  </div>
+</div>

@@ -1,1 +1,103 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+    margin: 0 auto;
+    background-image: url("./assets/images/Fondo-Edad-Media.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+.contenedorjuego {
+    width: 112vh;
+    height: 800px;
+    margin: 0 auto;
+    margin-top: 35px;
+    background-image: url("./assets/images/Fondo.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 20px 20px 125px 125px;
+    position: relative;
+}
+
+.contenedornormal {
+    width: 75vh;
+    height: 500px;
+    margin: 0 auto;
+    margin-top: 35px;
+    background-image: url("./assets/images/Fondo.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 20px 20px 35px 35px;
+    position: relative;
+}
+
+.contenedor2 {
+    position: relative;
+    left: 14vh;
+    font-family: 'Agency FB';
+}
+
+::-webkit-input-placeholder { /* Safari y Chrome */
+    color: rgba(180, 175, 170, 0.7) !important;
+ }
+  
+ :-moz-placeholder { /* Firefox hasta v18 */
+    color: rgba(180, 175, 170, 0.7) !important;  
+ }
+  
+ ::-moz-placeholder {  /* Firefox 19+ */
+    color: rgba(180, 175, 170, 0.7) !important; 
+ }
+  
+ :-ms-input-placeholder {  /* IE 10+´*/
+    color: rgba(180, 175, 170, 0.7) !important;
+ }
+
+.imgtitle{
+    position: relative;
+    margin-left:4vh;
+}
+
+.cointainer img {
+    width: 120px;
+    height: 120px;
+    margin-top: -60px;
+    margin-bottom: 30px;
+}
+
+input[type="text"], input[type="password"] {
+    /*width: 1000px;*/
+    border-bottom: solid .1rem #D8D8D8;
+    font-family: Century Gothic; /* para cambiar tipo de fuente*/
+    background-color: rgba(0, 0, 0, 0.5);
+    font-weight: 600;
+    color: rgba(180, 175, 170, 0.7)
+}
+
+
+.boton-entrar {
+    padding: 15px 30px;
+    cursor: pointer;
+    color: #fff; /*color de las letras en este caso blanco*/
+    border: none;
+    font-family: Century Gothic; /* para cambiar tipo de fuente*/
+    background-color: #FF5733;
+    border-bottom: 4px solid #C54327; /*para darle al boton una especie de base*/
+    margin-bottom: 20px;
+}
+
+.abisponblanco {
+    color: #fff;
+}

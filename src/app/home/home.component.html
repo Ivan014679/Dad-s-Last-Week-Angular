@@ -1,0 +1,21 @@
+<div class="formbody contenedornormal">
+  <div class="container contenedor2">
+    <div class="form-group">
+      <img class="imgtitle" src="../../assets/images/Titulo.png" style="margin-top: 40px; margin-bottom: 20px;" />
+    </div>
+    <h2 style="margin-left: 6.5vh;">
+      <font face="Old English Text MT">Men&uacute; principal</font>
+    </h2>
+    <div class="form-group">
+      <button style="margin-left: 6vh; margin-right: 5px;" (click)="juegoNuevo()" class="btn btn-warning">Nuevo juego</button>
+      <button style="margin-left: 5px;" (click)="continuarJuego()" [disabled]="isA000" class="btn btn-warning">Continuar juego</button>
+    </div>
+    <div class="form-group">
+      <button style="margin-left: 14vh;" (click)="estadisticas()" class="btn btn-warning">Estad&iacute;sticas</button>
+    </div>
+    <br />
+    <div class="form-group">
+      <button style="margin-left: 13.5vh;" (click)="Logout()" class="btn btn-danger">Cerrar sesi&oacute;n</button>
+    </div>
+  </div>
+</div>
